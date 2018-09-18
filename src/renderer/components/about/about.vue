@@ -44,6 +44,7 @@
                         resData += data;
                     });
                     res.on("end",()=>{
+                        console.log(JSON.parse(resData))
                         this.serverVserion=JSON.parse(resData).version
                         console.log(this.serverVserion,'-=-=')
                     });

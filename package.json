@@ -1,8 +1,8 @@
 {
   "name": "corsysteminfo",
   "version": "1.0.1",
-  "author": "",
-  "description": "An electron-vue project",
+  "author": "cor",
+  "description": "系统监控软件",
   "license": null,
   "main": "./dist/electron/main.js",
   "scripts": {
