@@ -1,0 +1,74 @@
+@import './theme.less';
+@dh:40px;
+.b-r{border-radius: 5px;}
+.fs12{font-size: 12px}
+.fs14{font-size: 14px}
+.fs16{font-size: 16px}
+.out-none{outline: none}
+.b-none{border: none}
+.t-b{background: @theme}
+.c-w{color: white}
+.cor_input{
+    height:@dh;
+    min-width: 200px;
+    border-radius: 5px;
+    border: none;
+    border: @theme solid 1px; 
+    outline: none;
+    text-indent: 10px;
+    font-size: 100%;
+    font-size: 14px;
+    margin: 5px 0px;
+}
+.cor_btn{
+    color: white;
+    background: @theme;
+    width: 100px;
+    height:@dh;
+    text-align: center;
+    line-height: @dh;
+    margin: 5px;
+    user-select: none;
+    transition: all ease .6s;
+    text-align: center;
+    cursor: pointer;
+    .b-r;
+    .fs14;
+    .out-none;
+    .b-none;
+    &:hover{
+        background: darken(@theme,+10%);
+    }
+}
+.card{
+
+}
+
+
+
+// 动画
+.offsetY-enter-active,.offsetY-leave-active{
+    transition: all ease 0.3s;
+}
+.offsetY-enter,.offsetY-leave-to{
+    opacity: 0;
+    transform:translateY(-250px) 
+}
+.offsetY-enter-to,.offsetY-leave{
+    transform:translateY(0px);
+    opacity: 1
+}
+.hide{
+    display: none;
+}
+.offsetX-enter-active,.offsetX-leave-active{
+    transition: all ease 0.3s;
+}
+.offsetX-enter,.offsetX-leave-to{
+    opacity: 0;
+    transform:translateX(-250px) 
+}
+.offsetX-enter-to,.offsetX-leave{
+    transform:translateX(0px);
+    opacity: 1
+}
