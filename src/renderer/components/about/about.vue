@@ -14,7 +14,7 @@
         <p class="describe">该软件使用 electron + vue + systeminformation + echarts + vbscript 构成</p>
         <h1 class="title">版本</h1>
         <p class="describe">当前版本 {{version}}</p>
-        <p class="describe pointer" @click="openweb('https://github.com/1057376155/corsvgbrowser')">最新版本 {{serverVserion}} &nbsp; 点击获取最新版本</p>
+        <p class="describe pointer" @click="openweb('https://github.com/1057376155/corsysteminfo')">最新版本 {{serverVserion}} &nbsp; 点击获取最新版本</p>
         <button @click="closeFN" class="btn close">关闭</button>
     </div>
 </template>
@@ -38,7 +38,7 @@
                 this.$emit('colose')
             },
             getServerVersion(){
-                https.get('https://raw.githubusercontent.com/1057376155/corsvgbrowser/master/package.json',(res)=>{
+                https.get('https://raw.githubusercontent.com/1057376155/corsysteminfo/master/package.json',(res)=>{
                     var resData = "";
                     res.on("data",function(data){
                         resData += data;
